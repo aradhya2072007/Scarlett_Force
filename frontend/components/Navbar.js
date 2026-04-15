@@ -49,9 +49,8 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass border-b border-white/5 shadow-2xl' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass border-b border-white/5 shadow-2xl' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -71,11 +70,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-5 py-2 rounded-xl text-sm font-bold tracking-wide transition-all duration-200 ${
-                  pathname === link.href
+                className={`px-5 py-2 rounded-xl text-sm font-bold tracking-wide transition-all duration-200 ${pathname === link.href
                     ? 'text-white bg-indigo-500/20 shadow-lg shadow-indigo-500/10'
                     : 'text-slate-300 hover:text-white hover:bg-white/10'
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
