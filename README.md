@@ -33,9 +33,25 @@
 
 ### 1. Prerequisites
 You need **Node.js** and **MongoDB** installed on your system.
-*(If you do not have MongoDB running locally, update the `MONGODB_URI` string in `backend/.env` with your MongoDB Atlas cluster string!)*
 
-### 2. Install Dependencies
+### 2. Environment Setup
+Since environment variables (`.env`) are ignored by Git, you **must** manually create them after cloning the repository.
+
+1. **Inside the `backend` folder**, create a file named `.env` and add:
+```env
+PORT=5001
+MONGODB_URI=mongodb://127.0.0.1:27017/eventsphere
+JWT_SECRET=eventsphere_super_secret_jwt_key_2024_change_in_production
+JWT_EXPIRE=7d
+NODE_ENV=development
+```
+
+2. **Inside the `frontend` folder**, create a file named `.env.local` and add:
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5001/api
+```
+
+### 3. Install Dependencies
 A root `package.json` allows you to install both layers easily. In the root directory run:
 ```bash
 npm run install-all
