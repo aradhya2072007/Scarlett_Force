@@ -63,6 +63,5 @@ After running the seed script, log in with the admin account to experience it im
 
 **Email:** `admin@eventsphere.com`
 **Password:** `Admin@12345`
-## 👨‍💻 Contributor
-- Xaan (Collaborator)
+
 *Enjoy exploring EventSphere!*
