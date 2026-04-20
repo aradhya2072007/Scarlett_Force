@@ -9,7 +9,8 @@ export const mockEvents = [
     location: "New York",
     price: "Free",
     eventType: "Meetup",
-    image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h1", name: "Sarah Chen", avatar: "https://i.pravatar.cc/150?u=h1" }
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ export const mockEvents = [
     location: "San Francisco",
     price: "Paid",
     eventType: "Party",
-    image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h2", name: "Marc Djordjevic", avatar: "https://i.pravatar.cc/150?u=h2" }
   },
   {
     id: 3,
@@ -33,7 +35,8 @@ export const mockEvents = [
     location: "Chicago",
     price: "Paid",
     eventType: "Workshop",
-    image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h3", name: "Elena Rodriguez", avatar: "https://i.pravatar.cc/150?u=h3" }
   },
   {
     id: 4,
@@ -45,7 +48,8 @@ export const mockEvents = [
     location: "Austin",
     price: "Paid",
     eventType: "Conference",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h4", name: "David Kim", avatar: "https://i.pravatar.cc/150?u=h4" }
   },
   {
     id: 5,
@@ -57,7 +61,8 @@ export const mockEvents = [
     location: "Seattle",
     price: "Free",
     eventType: "Meetup",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h5", name: "Maya Sharma", avatar: "https://i.pravatar.cc/150?u=h5" }
   },
   {
     id: 6,
@@ -69,7 +74,8 @@ export const mockEvents = [
     location: "Miami",
     price: "Free",
     eventType: "Workshop",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h6", name: "Liam O'Connor", avatar: "https://i.pravatar.cc/150?u=h6" }
   },
   {
     id: 7,
@@ -81,7 +87,8 @@ export const mockEvents = [
     location: "New York",
     price: "Free",
     eventType: "Party",
-    image: "https://images.unsplash.com/photo-1536924940846-227afb31e2a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1536924940846-227afb31e2a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h7", name: "Isabella Rossi", avatar: "https://i.pravatar.cc/150?u=h7" }
   },
   {
     id: 8,
@@ -93,7 +100,8 @@ export const mockEvents = [
     location: "Denver",
     price: "Paid",
     eventType: "Meetup",
-    image: "https://images.unsplash.com/photo-1528629297340-d1d466945dc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1528629297340-d1d466945dc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h8", name: "Jake Miller", avatar: "https://i.pravatar.cc/150?u=h8" }
   },
   {
     id: 9,
@@ -105,7 +113,8 @@ export const mockEvents = [
     location: "Portland",
     price: "Paid",
     eventType: "Workshop",
-    image: "https://images.unsplash.com/photo-1455390582262-044cdead27d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead27d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h9", name: "Sophia White", avatar: "https://i.pravatar.cc/150?u=h9" }
   },
   {
     id: 10,
@@ -117,7 +126,8 @@ export const mockEvents = [
     location: "Los Angeles",
     price: "Paid",
     eventType: "Conference",
-    image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    host: { id: "h10", name: "Nathaniel Black", avatar: "https://i.pravatar.cc/150?u=h10" }
   }
 ];
 
