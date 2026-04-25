@@ -120,7 +120,7 @@ function MapView() {
   const [locateError, setLocateError] = useState(null);
 
   return (
-    <div className="flex h-[calc(100vh-4rem)]">
+    <div className="relative flex h-[calc(100vh-4rem)] overflow-hidden isolate">
 
       {/* ===== MAP ===== */}
       <div className="flex-1 relative">

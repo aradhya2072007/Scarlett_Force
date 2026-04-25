@@ -49,17 +49,20 @@ function Header() {
               <span className="sm:hidden">Explore</span>
             </Link>
 
-            <Link
-              to="/map"
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${location.pathname === '/map'
-                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
-                  : 'bg-blue-50 text-blue-700 hover:bg-blue-100'
-                }`}
-            >
-              <MapPin size={18} />
-              <span className="hidden sm:inline">Map View</span>
-              <span className="sm:hidden">Map</span>
-            </Link>
+            {/* Map View — only shown when on Explore or Map pages */}
+            {(location.pathname === '/explore' || location.pathname === '/map') && (
+              <Link
+                to="/map"
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${location.pathname === '/map'
+                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
+                    : 'bg-blue-50 text-blue-700 hover:bg-blue-100'
+                  }`}
+              >
+                <MapPin size={18} />
+                <span className="hidden sm:inline">Map View</span>
+                <span className="sm:hidden">Map</span>
+              </Link>
+            )}
           </nav>
 
           {/* Search Bar */}
