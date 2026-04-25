@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Explore from './pages/Explore';
+import MapView from './pages/MapView';
 import Profile from './pages/Profile';
 import SavedEvents from './pages/SavedEvents';
 import Messages from './pages/Messages';
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
               <Route path="explore" element={<Explore />} />
+              <Route path="map" element={<MapView />} />
               <Route path="profile" element={<Profile />} />
               <Route path="saved" element={<SavedEvents />} />
               <Route path="messages" element={<Messages />} />

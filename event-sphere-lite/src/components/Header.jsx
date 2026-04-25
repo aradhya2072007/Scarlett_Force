@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Sparkles, User, Search, MessageCircle, Home, Bookmark, Compass } from 'lucide-react';
+import { Sparkles, User, Search, MessageCircle, Home, Bookmark, Compass, MapPin } from 'lucide-react';
 import { useUser } from '../context/UserContext';
 import { useSavedEvents } from '../context/SavedEventsContext';
 
@@ -48,6 +48,21 @@ function Header() {
               <span className="hidden sm:inline">Explore Events</span>
               <span className="sm:hidden">Explore</span>
             </Link>
+
+            {/* Map View — only shown when on Explore or Map pages */}
+            {(location.pathname === '/explore' || location.pathname === '/map') && (
+              <Link
+                to="/map"
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${location.pathname === '/map'
+                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
+                    : 'bg-blue-50 text-blue-700 hover:bg-blue-100'
+                  }`}
+              >
+                <MapPin size={18} />
+                <span className="hidden sm:inline">Map View</span>
+                <span className="sm:hidden">Map</span>
+              </Link>
+            )}
           </nav>
 
           {/* Search Bar */}
