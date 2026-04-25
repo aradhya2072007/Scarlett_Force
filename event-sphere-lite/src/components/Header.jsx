@@ -20,7 +20,7 @@ function Header() {
               <Sparkles size={20} />
             </div>
             <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-500 hidden sm:block">
-              EventSphere Lite
+              EventSphere
             </h1>
           </Link>
 
@@ -28,11 +28,10 @@ function Header() {
           <nav className="flex items-center gap-2">
             <Link
               to="/"
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${
-                location.pathname === '/'
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${location.pathname === '/'
                   ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-600/30'
                   : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-              }`}
+                }`}
             >
               <Home size={18} />
               <span className="hidden sm:inline">Home</span>
@@ -40,25 +39,24 @@ function Header() {
 
             <Link
               to="/explore"
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${
-                location.pathname === '/explore'
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${location.pathname === '/explore'
                   ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-600/30'
                   : 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100'
-              }`}
+                }`}
             >
               <Compass size={18} />
               <span className="hidden sm:inline">Explore Events</span>
               <span className="sm:hidden">Explore</span>
             </Link>
           </nav>
-          
+
           {/* Search Bar */}
           <div className="flex-1 max-w-md hidden md:block">
             <div className="relative">
               <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
-              <input 
-                type="text" 
-                placeholder="Search events..." 
+              <input
+                type="text"
+                placeholder="Search events..."
                 className="w-full pl-11 pr-4 py-2 bg-slate-100 border-transparent focus:bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 rounded-full text-sm transition-all outline-none"
               />
             </div>
@@ -66,8 +64,8 @@ function Header() {
 
           {/* Navigation Icons */}
           <div className="flex items-center gap-3">
-            <Link 
-              to="/saved" 
+            <Link
+              to="/saved"
               className={`p-2 rounded-xl transition-all relative ${location.pathname === '/saved' ? 'text-emerald-600 bg-emerald-50' : 'text-slate-600 hover:bg-slate-100'}`}
               title="Saved Events"
             >
@@ -78,9 +76,9 @@ function Header() {
                 </span>
               )}
             </Link>
-            
-            <Link 
-              to="/messages" 
+
+            <Link
+              to="/messages"
               className={`p-2 rounded-xl transition-all relative ${location.pathname === '/messages' ? 'text-emerald-600 bg-emerald-50' : 'text-slate-600 hover:bg-slate-100'}`}
               title="Messages"
             >
@@ -89,9 +87,9 @@ function Header() {
                 <span className="absolute top-2 right-2 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full"></span>
               )}
             </Link>
-            
-            <Link 
-              to="/profile" 
+
+            <Link
+              to="/profile"
               className={`p-2 rounded-xl transition-all flex items-center gap-2 ${location.pathname === '/profile' ? 'text-emerald-600 bg-emerald-50' : 'text-slate-600 hover:bg-slate-100'}`}
               title="Profile"
             >
