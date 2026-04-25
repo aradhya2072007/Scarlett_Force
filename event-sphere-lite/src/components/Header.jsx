@@ -24,19 +24,33 @@ function Header() {
             </h1>
           </Link>
 
-          {/* Explore Events Button - Primary Navigation */}
-          <Link 
-            to="/" 
-            className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${
-              location.pathname === '/' 
-                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-600/30' 
-                : 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100'
-            }`}
-          >
-            <Compass size={20} />
-            <span className="hidden sm:inline">Explore Events</span>
-            <span className="sm:hidden">Explore</span>
-          </Link>
+          {/* Primary Navigation Links */}
+          <nav className="flex items-center gap-2">
+            <Link
+              to="/"
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${
+                location.pathname === '/'
+                  ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-600/30'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              }`}
+            >
+              <Home size={18} />
+              <span className="hidden sm:inline">Home</span>
+            </Link>
+
+            <Link
+              to="/explore"
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold transition-all flex-shrink-0 text-base ${
+                location.pathname === '/explore'
+                  ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-600/30'
+                  : 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100'
+              }`}
+            >
+              <Compass size={18} />
+              <span className="hidden sm:inline">Explore Events</span>
+              <span className="sm:hidden">Explore</span>
+            </Link>
+          </nav>
           
           {/* Search Bar */}
           <div className="flex-1 max-w-md hidden md:block">
